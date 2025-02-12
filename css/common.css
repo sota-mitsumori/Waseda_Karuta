@@ -1,0 +1,19 @@
+.center{
+    text-align: center;
+}
+.right{
+    text-align: right;
+    display: inline-block;
+}
+.left{
+    text-align: left;
+    display: inline-block;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.btn {
+    white-space: normal;
+}

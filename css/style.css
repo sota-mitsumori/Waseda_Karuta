@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* style.css　
+--------------------------------------------------------- */
+
+body{
+    background-image: url(/static/background.svg);
+    padding-top: 60px; 
+}
+
+#header, #navbar{
+    height: 0;
+}
+
+.fixed-top{
+    box-shadow: 0px 9px 3px -3px rgba(209, 209, 209, 0.6);
+    -webkit-box-shadow: 0px 9px 3px -3px rgba(209, 209, 209, 0.6);
+    -moz-box-shadow: 0px 9px 3px -3px rgba(209, 209, 209, 0.6);
+}
+.scroll{
+    background-color: transparent;
+    position: relative;
+    height: 360px;
+    overflow: scroll;
+    overflow-x: hidden;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+.mainimg{
+    width: 100%;
+}
+#twitter{
+    padding: 10px;
+    background-color: #F8F8FF;
+    border-radius: 3%;
+    margin: 5px;
+}
+.whatsnew{
+    font-size: 1.6em;
+    padding: 10px;
+    background: radial-gradient(#c3fff7, rgba(247, 255, 248, 0));
+    text-align: center;
+    border-radius: 50%;
+}
+.twitter-title{
+    font-size: 1.6em;
+    padding: 10px;
+    background: radial-gradient(#cbe2ff, rgba(247, 255, 248, 0));
+    text-align: center;
+    border-radius: 50%;
+    color: #000000;
+}
+.card-text{
+    font-size: 1em;
+    text-align: center;
+    display: block;
+}
+.fuda{
+    background-color: rgba(256, 256, 256, 0.9);
+    padding: 20px;
+    margin: 30px 5px !important;
+    border: solid 10px rgb(204, 255, 194);
+}
+.cmn-head{
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-left: solid 10px rgb(145, 255, 121);
+    width: 100%;
+    background:linear-gradient(to right, #d2ffb8 0%, #f1ffea 50%, #f6fff1 100%)
+}
+.cmn-content{
+    padding: 10px;
+    letter-spacing: 0.1em;
+}
+.cmn-img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    box-shadow: 0px 0px white, 0px 3px 10px 3px #6f6f6f;
+}
+.faq{
+    padding: 15px;
+}
+.faq-q{
+    border-left: solid 6px rgb(161, 255, 200);
+    padding-left: 10px;
+}
+.recruit-title{
+    font-size: 1.2em;
+    background-color: #e5ffc4;
+    border-radius: 5px ;
+}
+.recruit-box{
+    text-align: center;
+    padding: 0px;
+    margin: 0px 5px;
+    border: solid 3px #e5ffc4;
+    border-radius: 10px;
+}
+.recruit-content{
+    padding: 5px;
+}
+.recruit-sentence{
+    padding: 7px;
+}

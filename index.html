@@ -1,0 +1,92 @@
+<!-- 【共通】ここから -->
+
+<!DOCTYPE html>
+<meta http-equiv="content-type" content="text/html" charset="UTF-8" />
+<div id="header"></div>
+
+<div id="navbar"></div>
+
+<!-- 共通ここまで -->
+<!-- -------------------------------------------------- -->
+
+
+<script type="text/javascript" src="/js/news.js"></script>
+
+<img class="mainimg" src="/static/main.svg">
+<div class="container mainWrap">
+    
+    <div class="container-fuid">
+
+        <!-- 注目イベントや情報をリンク付きで掲載する箇所 -->
+        <!-- 新歓時期が終わってこの情報を表示しない場合は、ここから・・・ -->
+
+        <!--
+        <div class="recruit infobtn">
+            <div style="margin-top: 10px; margin-bottom: 10px;">
+                <a href="/pages/recruit/" role="button">
+                    <button class="btn btn-success btn-lg btn-block">
+                        2019年度新歓イベント公開中！！！
+                    </button>
+                </a>
+            </div>
+        </div>
+         -->
+
+        <!-- ・・・ここまでコメントアウト -->
+      
+
+        <div class="row">
+
+            <!-- 新着情報(更新した内容等)を掲載する箇所(いじらない) -->
+            <!-- 新着情報の変更は "js/news.js" に入力！ -->
+            <div class="col-lg col-md-12" style="padding: 20px;">
+                <div class="whatsnew">
+                    新着情報
+                </div>
+                <div class="scroll" style="margin: 0px 10px;">
+                    <script type="text/javascript">echoNewcontent();</script>
+                </div>
+            </div>
+            
+            <!-- 公式Twitterを掲載する箇所(いじらない) -->
+            <div class="col-lg col-md-12" style="padding: 20px;">
+                <div class="sns-title">
+                    <span>
+                        <a href="https://twitter.com/KarutaWaseda" target="_blank" style="text-decoration: none;">
+                            <div class="twitter-title">
+                                公式Twitter
+                            </div>
+                        </a>
+                    </span>
+                </div>
+                <div>
+                    <a class="twitter-timeline" data-height="350" data-theme="light" data-link-color="#2B7BB9" data-chrome="noheader nofooter" href="https://twitter.com/KarutaWaseda">Tweets by KarutaWaseda</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<!-- -------------------------------------------------- -->
+<!-- 共通ここから -->
+
+<!-- ページ下部の「外部リンク」と「©」の部分 -->
+<div id="footer"></div>
+
+<footer>
+    <script src="/js/common.js"></script>
+    <script>load("/include/header");</script>
+    <script>load("/include/navbar");</script>
+    <script>load("/include/footer");</script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+</footer>
+
+</body>
+</html>
+
+<!-- 共通ここまで -->
