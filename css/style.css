@@ -12,7 +12,6 @@ body{
 
 /* ナビゲーションバー */
 .navbar{
-    border-bottom: 1px solid #ddd;
     border-radius: 0px;
     box-shadow: 0px 3px 3px -3px rgba(209, 209, 209, 0.6);
     -webkit-box-shadow: 0px 3px 3px -3px rgba(209, 209, 209, 0.6);
@@ -40,7 +39,7 @@ body{
 }
 .mainimg {
     width: 100%; 
-    height: auto;
+    height: fill;
     display: block;
 }
 .mainText {
