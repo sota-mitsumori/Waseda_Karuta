@@ -2,6 +2,10 @@
 /* style.css　
 --------------------------------------------------------- */
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     padding-top: 60px; 
 }
@@ -14,10 +18,10 @@ body{
     -webkit-box-shadow: 0px 3px 3px -3px rgba(209, 209, 209, 0.6);
     -moz-box-shadow: 0px 3px 3px -3px rgba(209, 209, 209, 0.6);
 }
+
 .navbar-brand{
     font-size: 1.6em;
     font-weight: bold;
-    color: #000000;
 }
 .scroll{
     background-color: transparent;
@@ -65,15 +69,16 @@ h3 {
     background-color: rgba(256, 256, 256, 0.9);
     padding: 20px;
     margin: 30px 5px !important;
-    border: solid 10px rgb(204, 255, 194);
+    border: solid 6px #578FCA;
+    border-radius: 10px;
 }
 .cmn-head{
     font-size: 1.4em;
     font-weight: bold;
     padding: 5px 10px;
-    border-left: solid 10px rgb(145, 255, 121);
+    border-left: solid 10px #578FCA;
     width: 100%;
-    background:linear-gradient(to right, #d2ffb8 0%, #f1ffea 50%, #f6fff1 100%)
+    background:linear-gradient(to right, #A1E3F9 0%, #D1F8EF 100%)
 }
 .cmn-content{
     padding: 10px;
@@ -91,7 +96,7 @@ h3 {
     padding: 15px;
 }
 .faq-q{
-    border-left: solid 6px rgb(161, 255, 200);
+    border-left: solid 6px #578FCA;
     padding-left: 10px;
 }
 
@@ -101,21 +106,10 @@ h3 {
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #f8f8f8;
+    background: #660033;
     font-weight: 300;
     margin-top: 20px;
+    color: #fff;
 }
 
-
-/* かるた協会のボタン */
-.karuta_kyokai {
-    display: inline-block;
-    margin-right: 100px;
-    padding-left: 10px;
-    text-decoration: none;
-    background-color: #fff;
-    color: #000;
-    border-radius: 10px;
-    float: right;
-}
 
