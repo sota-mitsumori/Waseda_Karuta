@@ -3,18 +3,21 @@
 --------------------------------------------------------- */
 
 body{
-    background-image: url(/static/background.svg);
     padding-top: 60px; 
 }
 
-#header, #navbar{
-    height: 0;
+/* ナビゲーションバー */
+.navbar{
+    border-bottom: 1px solid #ddd;
+    border-radius: 0px;
+    box-shadow: 0px 3px 3px -3px rgba(209, 209, 209, 0.6);
+    -webkit-box-shadow: 0px 3px 3px -3px rgba(209, 209, 209, 0.6);
+    -moz-box-shadow: 0px 3px 3px -3px rgba(209, 209, 209, 0.6);
 }
-
-.fixed-top{
-    box-shadow: 0px 9px 3px -3px rgba(209, 209, 209, 0.6);
-    -webkit-box-shadow: 0px 9px 3px -3px rgba(209, 209, 209, 0.6);
-    -moz-box-shadow: 0px 9px 3px -3px rgba(209, 209, 209, 0.6);
+.navbar-brand{
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #000000;
 }
 .scroll{
     background-color: transparent;
@@ -25,30 +28,34 @@ body{
     border: 1px solid #ddd;
     padding: 5px;
 }
-.mainimg{
-    width: 100%;
-}
-#twitter{
-    padding: 10px;
-    background-color: #F8F8FF;
-    border-radius: 3%;
-    margin: 5px;
-}
-.whatsnew{
-    font-size: 1.6em;
-    padding: 10px;
-    background: radial-gradient(#c3fff7, rgba(247, 255, 248, 0));
+
+.image-container {
+    position: relative; 
+    display: inline-block; 
+    width: 100%; 
+  }
+  .mainimg {
+    width: 100%; 
+    height: auto;
+    display: block;
+  }
+  .mainText {
+    position: absolute; 
+    top: 50%; /* Adjust the vertical position */
+    left: 50%; /* Adjust the horizontal position */
+    transform: translate(-50%, -50%); /* Centers the text */
+    color: white; /* Makes the text visible on dark images */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Optional: improves text readability */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
     text-align: center;
-    border-radius: 50%;
+  }
+
+h3 {
+    margin-top: 50px; /* Adjust based on navbar height */
+    scroll-margin-top: 80px; 
 }
-.twitter-title{
-    font-size: 1.6em;
-    padding: 10px;
-    background: radial-gradient(#cbe2ff, rgba(247, 255, 248, 0));
-    text-align: center;
-    border-radius: 50%;
-    color: #000000;
-}
+
 .card-text{
     font-size: 1em;
     text-align: center;
@@ -87,21 +94,28 @@ body{
     border-left: solid 6px rgb(161, 255, 200);
     padding-left: 10px;
 }
-.recruit-title{
-    font-size: 1.2em;
-    background-color: #e5ffc4;
-    border-radius: 5px ;
-}
-.recruit-box{
+
+
+/* フッター */
+.footer {
+    width: 100%;
     text-align: center;
-    padding: 0px;
-    margin: 0px 5px;
-    border: solid 3px #e5ffc4;
+    padding: 25px 0;
+    background: #f8f8f8;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+
+/* かるた協会のボタン */
+.karuta_kyokai {
+    display: inline-block;
+    margin-right: 100px;
+    padding-left: 10px;
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
     border-radius: 10px;
+    float: right;
 }
-.recruit-content{
-    padding: 5px;
-}
-.recruit-sentence{
-    padding: 7px;
-}
+
