@@ -3,11 +3,35 @@
 <!DOCTYPE html>
 <meta http-equiv="content-type" content="text/html" charset="UTF-8" />
 <div id="header"></div>
-<div id="navbar"></div>
 
 
 <!-- 共通ここまで -->
 <!-- -------------------------------------------------- -->
+
+<!-- ナビゲーションバー -->
+
+<div class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #660033;">
+        <div class="container">
+          <a class="navbar-brand" style="color: #fff;" href="#">早稲田大学かるた会</a>
+          <button class="navbar-dark navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" ></span>
+          </button>
+        </div>
+        
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+          <div class="navbar-nav mx-auto" >
+            <a class="nav-item nav-link bar" style="color: #fff;" href="/#">ホーム</a>
+            <a class="nav-item nav-link bar" style="color: #fff;" href="/#record">大会記録</a>
+            <a class="nav-item nav-link bar" style="color: #fff;" href="/#event">イベント</a>
+            <a class="nav-item nav-link bar" style="color: #fff;" href="/#faq">よくある質問</a>
+            <a class="nav-item nav-link bar" style="color: #fff;" href="/#contact">お問い合わせ</a>
+          </div>
+        </div>
+    </nav>
+</div>
+
+<!-- ナビゲーションバーここまで -->
 
 <div class="image-container">
     <img class="mainimg" src="/assets/main.jpg">
@@ -17,8 +41,6 @@
 </div>
 
 <div class="container mainWrap">
-
-
     <div class="pagetitle">
         <h3 id="record">大会記録</h3>
     </div>
@@ -311,21 +333,25 @@
 </div>
 
 
+<!-- ページ下部の「外部リンク」と「©」の部分 -->
+
+<footer>
+    <p class="footer">
+        &copy; 2011-2025 早稲田大学かるた会 All Rights Reserved.
+        <a href="https://www.karuta.or.jp/" target="_blank">
+            <button class="btn btn-outline-light btn-sm">一般社団法人全日本かるた協会</button>
+        </a>
+    </p>
+</footer>
+
 <!-- -------------------------------------------------- -->
 <!-- 共通ここから -->
 
-<!-- ページ下部の「外部リンク」と「©」の部分 -->
+<script src="/js/common.js"></script>
+<script>load("/include/header");</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>   
 
-<div id="footer" ></div>
-
-<footer>
-    <script src="/js/common.js"></script>
-    <script>load("/include/header");</script>
-    <script>load("/include/navbar");</script>
-    <script>load("/include/footer");</script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>   
-</footer>
 
 </body>
 </html>
