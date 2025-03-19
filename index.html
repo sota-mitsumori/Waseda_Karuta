@@ -347,6 +347,25 @@
     </p>
 </footer>
 
+<!-- LINE公式ポップアップ -->
+<div class="modal fade" id="linePopup" tabindex="-1" aria-labelledby="linePopupLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="linePopupLabel">早稲田大学へのご入学おめでとうございます</h5>
+        </div>
+        <div class="modal-body">
+            みなさん、ご入学おめでとうございます。<br>
+            初心者経験者問わず、競技かるたに興味がある人はこちらの公式LINEを登録して新歓グループに是非ご参加ください!!<br>
+          <a href="https://lin.ee/QJBCGC5"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" border="0"></a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+        </div>
+      </div>
+    </div>
+</div>
+
 <!-- -------------------------------------------------- -->
 <!-- 共通ここから -->
 
@@ -354,6 +373,13 @@
 <script>load("/include/header");</script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>   
+<script>
+    // ページ読み込み時にモーダルを自動表示
+    var linePopup = new bootstrap.Modal(document.getElementById('linePopup'));
+    window.addEventListener('load', function(){
+      linePopup.show();
+    });
+</script>
 </body>
 </html>
 
